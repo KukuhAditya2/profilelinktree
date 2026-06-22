@@ -1,0 +1,10 @@
+# Ignore everything by default
+*
+
+# Do not ignore .gitignore itself
+!.gitignore
+
+# Do not ignore the dist folder or any of its contents
+!dist/
+!dist/**
+
