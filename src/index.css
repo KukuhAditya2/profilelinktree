@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  
+  --color-base-primary: #3525cd;
+  --color-base-primary-light: #4d44e3;
+  --color-base-primary-container: #4f46e5;
+  --color-base-primary-fixed: #e2dfff;
+  --color-base-secondary: #006c49;
+  --color-base-secondary-container: #6cf8bb;
+  --color-base-on-secondary-container: #00714d;
+  --color-base-tertiary: #684000;
+  --color-base-surface: #f8f9ff;
+  --color-base-surface-container: #e6eeff;
+  --color-base-surface-container-high: #dee9fc;
+  --color-base-surface-container-highest: #d9e3f6;
+  --color-base-on-surface: #121c2a;
+  --color-base-on-surface-variant: #464555;
+  --color-base-outline: #777587;
+  --color-base-outline-variant: #c7c4d8;
+  
+  --border-radius-xl: 1.5rem;
+  --border-radius-lg: 1rem;
+  --border-radius-md: 0.75rem;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #f8f9ff;
+  color: #121c2a;
+  -webkit-font-smoothing: antialiased;
+}
+
+.gradient-bg {
+  background: radial-gradient(circle at 0% 0%, #e2dfff 0%, transparent 50%),
+              radial-gradient(circle at 100% 100%, #6ffbbe 0%, transparent 50%),
+              #f8f9ff;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* Global custom scrollbars - elegant, super thin and modern */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(53, 37, 205, 0.25) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(53, 37, 205, 0.25);
+  border-radius: 9999px;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(53, 37, 205, 0.5);
+}
+
+::-webkit-scrollbar-button {
+  display: none !important;
+  width: 0;
+  height: 0;
+}
+
+/* Specific component scrollbar style */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(53, 37, 205, 0.25);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(53, 37, 205, 0.5);
+}

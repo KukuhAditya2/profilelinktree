@@ -1,0 +1,6 @@
+{
+  "name": "Bebas Botak Store",
+  "description": "Catalog online produk penumbuh rambut & brewok premium terpilih.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
